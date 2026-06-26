@@ -1,0 +1,13 @@
+{
+  "name": "techlux-flooring",
+  "version": "1.0.0",
+  "description": "TechLux Flooring Solutions - Professional flooring products website",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "echo 'Static site - no build required'"
+  },
+  "keywords": ["flooring", "products", "solution", "techlux"],
+  "author": "TechLux",
+  "license": "MIT"
+}

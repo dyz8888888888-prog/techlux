@@ -1,0 +1,32 @@
+{
+  "name": "techlux-flooring",
+  "version": 2,
+  "buildCommand": "echo 'Static site - no build required'",
+  "devCommand": "node server.js",
+  "installCommand": "npm install",
+  "builds": [
+    {
+      "src": "**/*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "**/*.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "**/*.js",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "**/*.{png,jpg,jpeg,gif,svg,ico}",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ],
+  "regions": ["hkg1"]
+}

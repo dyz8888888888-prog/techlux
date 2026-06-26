@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechLux - Contact us for plastic flooring solutions and auto parts inquiries.">
+  <title>Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <style>
+    .contact-section {
+      padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    .contact-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--spacing-xl);
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-lg);
+    }
+
+    .contact-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: var(--spacing-lg);
+      box-shadow: var(--shadow-card);
+    }
+
+    .contact-card__title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--color-text-primary);
+      margin-bottom: var(--spacing-md);
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--spacing-md);
+      margin-bottom: var(--spacing-md);
+    }
+
+    .contact-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-item__icon {
+      width: 44px;
+      height: 44px;
+      background: var(--color-bg-tertiary);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--color-accent);
+    }
+
+    .contact-item__content {
+      color: var(--color-text-secondary);
+      font-size: 0.9375rem;
+      line-height: 1.5;
+    }
+
+    .contact-item__content strong {
+      color: var(--color-text-primary);
+      font-weight: 600;
+    }
+
+    .hero__decor-image {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.2;
+      max-width: 100%;
+      height: auto;
+      pointer-events: none;
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        padding: var(--spacing-lg) var(--spacing-md);
+      }
+    }
+  </style>
+</head>
+<body class="layout">
+  <nav class="page-nav">
+    <div class="page-nav__inner">
+      <a href="index.html" class="page-nav__logo">TechLux</a>
+      <div class="page-nav__links">
+        <a href="index.html" class="page-nav__link">Home</a>
+        <a href="products/garage-floor.html" class="page-nav__link">Garage Tile</a>
+        <a href="products/sports-floor.html" class="page-nav__link">Sports Tile</a>
+        <a href="products/air-filter.html" class="page-nav__link">Filter</a>
+        <a href="products/wiper-blade.html" class="page-nav__link">Wiper Blade</a>
+        <a href="products/tpms.html" class="page-nav__link">TPMS</a>
+        <a href="products/control-cable.html" class="page-nav__link">Cable</a>
+        <a href="about.html" class="page-nav__link">About</a>
+        <a href="contact.html" class="page-nav__link page-nav__link--active">Contact</a>
+      </div>
+      <button class="page-nav__toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-nav__mobile">
+    <a href="index.html" class="page-nav__mobile-link">Home</a>
+    <a href="products/garage-floor.html" class="page-nav__mobile-link">Garage Tile</a>
+    <a href="products/sports-floor.html" class="page-nav__mobile-link">Sports Tile</a>
+    <a href="products/air-filter.html" class="page-nav__mobile-link">Filter</a>
+    <a href="products/wiper-blade.html" class="page-nav__mobile-link">Wiper Blade</a>
+    <a href="products/tpms.html" class="page-nav__mobile-link">TPMS</a>
+    <a href="products/control-cable.html" class="page-nav__mobile-link">Cable</a>
+    <a href="about.html" class="page-nav__mobile-link">About</a>
+    <a href="contact.html" class="page-nav__mobile-link">Contact</a>
+  </div>
+
+  <main class="main">
+    <section class="hero hero--half">
+      <div class="hero__background"></div>
+      <div class="hero__content">
+        <h1 class="hero__title">Contact Us</h1>
+        <p class="hero__subtitle">Get in touch with our team for inquiries, quotes, or partnership opportunities</p>
+      </div>
+      <img src="4.1.1.png" alt="Decor" class="hero__bottom-image">
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-card">
+              <h3 class="contact-card__title">Headquarters</h3>
+              <div class="contact-item">
+                <div class="contact-item__icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div class="contact-item__content">
+                  <strong>Address:</strong><br>
+                  No. 168 Industrial Park Road, Lanshan District, Linyi City, Shandong Province, China
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item__icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                  </svg>
+                </div>
+                <div class="contact-item__content">
+                  <strong>Sales Hotline:</strong><br>
+                  <a href="tel:+86-15632198760" style="color: var(--color-accent);">+86-15632198760</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item__icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                    <path d="M22 6l-10 7L2 6"/>
+                  </svg>
+                </div>
+                <div class="contact-item__content">
+                  <strong>Business Email:</strong><br>
+                  <a href="mailto:yanzhe1999@foxmail.com" style="color: var(--color-accent);">yanzhe1999@foxmail.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item__icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                </div>
+                <div class="contact-item__content">
+                  <strong>Office Hours:</strong><br>
+                  Monday - Saturday 8:30 - 18:00 (UTC+8)
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <h3 class="contact-card__title">Regional Cooperation</h3>
+              <p style="color: var(--color-text-secondary); margin-bottom: var(--spacing-md); line-height: 1.5;">
+                We are actively seeking quality regional partners and distributors worldwide. If you have resources in the automotive aftermarket or flooring industry, we welcome you to contact us for discussion.
+              </p>
+              <div style="display: flex; gap: var(--spacing-sm); flex-wrap: wrap;">
+                <a href="mailto:yanzhe1999@foxmail.com" class="btn btn--secondary">Apply for Agency</a>
+                <a href="tel:+86-15632198760" class="btn btn--primary">Call Us</a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__inner">
+      <div class="page-footer__socials-container">
+        <div class="page-footer__socials">
+          <a href="mailto:contact@techlux.com" class="page-footer__social" aria-label="Email">
+            <img src="email-us.png" alt="Email" width="64" height="64">
+          </a>
+          <a href="#" class="page-footer__social" aria-label="Facebook">
+            <img src="Facebook.png" alt="Facebook" width="64" height="64">
+          </a>
+          <a href="#" class="page-footer__social" aria-label="LinkedIn">
+            <img src="linkin.png" alt="LinkedIn" width="64" height="64">
+          </a>
+          <a href="#" class="page-footer__social" aria-label="WhatsApp">
+            <img src="whatsApp_shareIcon.png" alt="WhatsApp" width="64" height="64">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer__bottom">
+      <div class="page-footer__bottom-inner">
+        <p class="page-footer__copyright">© 2026 TechLux. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggle = document.querySelector('.page-nav__toggle');
+      const mobileNav = document.querySelector('.page-nav__mobile');
+
+      if (toggle && mobileNav) {
+        toggle.addEventListener('click', function() {
+          mobileNav.classList.toggle('active');
+          toggle.classList.toggle('active');
+        });
+      }
+
+      const hero = document.querySelector('.hero');
+      if (hero) {
+        hero.classList.add('animate-in');
+      }
+    });
+  </script>
+  <a href="https://wa.me/1234567890" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+    <img src="whatsApp_shareIcon.png" alt="WhatsApp">
+  </a>
+</body>
+</html>
